@@ -2,12 +2,15 @@
 
 <section id="clients" class="clients">
   <div class="container py-5">
-    <div class="row">
-      <div *ngFor="let carBrandImage of carBrandImages" class="col-lg-3 col-md-5 col-5" data-aos="zoom-in">
-        <img routerLink="/cars/{{ carBrandImage.brandId }}" class="cursor"
-          src="https://localhost:44398/{{ carBrandImage.imagePath }}" [alt]="carBrandImage.brandId" />
-      </div>
-    </div>
+      <owl-carousel-o [options]="customOptions">
+
+        <ng-container *ngFor="let carBrandImage of branddetail">
+          <ng-template carouselSlide [id]="'carBrandImage.id'">
+            <img routerLink="/cars/{{ carBrandImage.brandId }}" class="cursor" src="https://localhost:44398/{{ carBrandImage.carBrandImagePath }}" [alt]="carBrandImage.brandId" />
+          </ng-template>
+        </ng-container>
+        
+      </owl-carousel-o>
   </div>
 </section>
 
@@ -84,7 +87,7 @@
                   }}" [alt]="cardetail.brandName" />
               </td>
               <td class="text-center">
-                <button type="button" data-aos="fade-up" class="btn btn-outline-dark px-3">
+                <button type="button" data-aos="fade-up" routerLink="/cardetail/{{ cardetail.id }}" class="btn btn-outline-dark px-3" >
                   <i class="bx bxs-detail"></i>
                   Detaylara Git
                 </button>

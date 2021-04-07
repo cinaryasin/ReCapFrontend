@@ -8,7 +8,7 @@
     <div
       class="row mb-4"
       *ngFor="
-        let carBrandImage of carbrandimages;
+        let brand of branddetail;
         index as i;
         first as firstImage
       "
@@ -19,15 +19,17 @@
           <img
             style="
               transform: translate(-20%);"
-            src="https://localhost:44398/{{ carBrandImage.imagePath }}"
+            src="https://localhost:44398/{{ brand.carBrandImagePath }}"
             class="img-fluid"
             alt=""
           />
         </div>
       </div>
-      <div class="col-lg-6" data-aos="fade-left">
-        <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3">
-          <h3>Recap Project</h3>
+      <div  class="col-lg-6" data-aos="fade-left">
+        <div  class="content pt-4 pt-lg-0 pl-0 pl-lg-3">
+          <h3>{{brand.brandName}}</h3>
+          
+         
           <p class="font-italic">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -35,7 +37,7 @@
           <button
             type="button"
             data-aos="fade-up"
-            routerLink="/cars/{{ carBrandImage.brandId }}"
+            routerLink="/cars/{{ brand.brandId }}"
             class="btn btn-outline-dark"
           >
             Araçlara Git

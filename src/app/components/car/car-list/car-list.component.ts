@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { observable } from 'rxjs';
 import { CarBrandImage } from 'src/app/models/carBrandImage';
 import { CarDetail } from 'src/app/models/carDetail';
 import { Color } from 'src/app/models/color';
 import { CarBrandImageService } from 'src/app/services/car-brand-image.service';
 import { CarService } from 'src/app/services/car.service';
 import { ColorService } from 'src/app/services/color.service';
+import { OwlOptions } from "ngx-owl-carousel-o";
+import { BrandDetail } from 'src/app/models/brandDetail';
 // @ts-ignore
 import('../../../../assets/js/main');
 
@@ -16,21 +17,23 @@ import('../../../../assets/js/main');
   styleUrls: ['./car-list.component.css'],
 })
 export class CarListComponent implements OnInit {
+
   carDetails: CarDetail[];
-  carBrandImages:CarBrandImage[];
+  carBrandImages: CarBrandImage[];
   colors: Color[];
+  branddetail:BrandDetail[];
 
   constructor(
     private carService: CarService,
     private activatedRoute: ActivatedRoute,
     private carBrandImageService: CarBrandImageService,
     private colorService: ColorService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
-    this.getCarBrandImage();
     this.setCars();
     this.getColors();
+    this.getBrandDetails();
   }
 
   getCarDetails() {
@@ -38,14 +41,14 @@ export class CarListComponent implements OnInit {
       this.carDetails = response.data;
     });
   }
-
-  getCarBrandImage(){
-    this.carBrandImageService.getCarBrandImages().subscribe(response=>{
-      this.carBrandImages=response.data
+  getBrandDetails(){
+    this.carBrandImageService.getBrandDetail().subscribe(r=>{
+      this.branddetail = r.data
     })
   }
 
-  getColors(){
+
+  getColors() {
     this.colorService.getColor().subscribe(response => {
       this.colors = response.data
     })
@@ -65,5 +68,21 @@ export class CarListComponent implements OnInit {
     this.carService.getCarDetailByBrandId(brandId).subscribe((response) => {
       this.carDetails = response.data;
     });
+  }
+
+  customOptions: OwlOptions = {
+    loop: true,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
   }
 }

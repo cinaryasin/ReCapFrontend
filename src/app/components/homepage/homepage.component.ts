@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Brand } from 'src/app/models/brand';
+import { BrandDetail } from 'src/app/models/brandDetail';
 import { CarBrandImage } from 'src/app/models/carBrandImage';
+import { CarDetail } from 'src/app/models/carDetail';
 
 import { BrandService } from 'src/app/services/brand.service';
 import { CarBrandImageService } from 'src/app/services/car-brand-image.service';
+import { CarService } from 'src/app/services/car.service';
 // @ts-ignore
 import('../../../assets/js/main');
 
@@ -15,16 +18,15 @@ import('../../../assets/js/main');
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-  carbrandimages:CarBrandImage[]=[];
-  
-  
-  
-  
-  constructor(private carbrandimageservice:CarBrandImageService, private branService:BrandService,private activatedRoute:ActivatedRoute) { }
+   branddetail:BrandDetail[]=[];
+
+  constructor(private carbrandimageservice:CarBrandImageService,private activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params=>{
-      this.getBrandimages()
+     
+      
+     this.getBrandDetails()
       
     })
     
@@ -32,16 +34,20 @@ export class HomepageComponent implements OnInit {
   }
 
   
-  getBrandimages(){
-    this.carbrandimageservice.getCarBrandImages().subscribe(response=>{
-      this.carbrandimages=response.data
+ 
+
+  getBrandDetails(){
+    this.carbrandimageservice.getBrandDetail().subscribe(r=>{
+      this.branddetail = r.data
     })
   }
 
  
+   
+ }
 
  
-}
+
 
   
   
