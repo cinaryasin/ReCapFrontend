@@ -11,13 +11,12 @@ import { CarService } from 'src/app/services/car.service';
 })
 export class CarDetailComponent implements OnInit {
   carDetails:CarDetail[];
-  carDetail:CarDetail
+  carDetail:CarDetail[];
 
   constructor(private carService:CarService, private activatedRoute: ActivatedRoute ) {}
 
   ngOnInit(): void {
     this.setCarDetails();
-    
   }
 
   getCarDetails() {
@@ -26,20 +25,26 @@ export class CarDetailComponent implements OnInit {
     });
   }
   
-
+  getCarDetailByBrandId(id:number){
+    this.carService.getCarDetailByBrandId(id).subscribe(r=>{
+      this.carDetails=r.data;
+      console.log(r.data);
+    })
+  }
 
   setCarDetails() {
     this.activatedRoute.params.subscribe((param) => {
       if (param.id) {
         console.log(param.id)
-        return this.getCarDetailByCarId(param.id);
+        return this.getCarById(param.id);
       }
       return this.getCarDetails();
     });
   }
-  getCarDetailByCarId(id: number) {
+  getCarById(id: number) {
     this.carService.getCarById(id).subscribe((response) => {
       this.carDetail = response.data;
+      console.log(response.data)
     });
   }
 }

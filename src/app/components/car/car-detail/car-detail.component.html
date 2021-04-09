@@ -19,17 +19,13 @@
                 </tr>
               </thead>
               
-              <tr *ngFor="let cardetail of carDetails">
+              <tr *ngFor="let cardetail of carDetail">
                 <td class="text-center">{{ cardetail.id }}</td>
                 <td>{{ cardetail.dailyPrice | currency: "₺ " }}</td>
                 <td>{{ cardetail.modelYear }}</td>
                 <td>{{ cardetail.brandName }}</td>
                 <td>{{ cardetail.description }}</td>
               </tr>
-
-
-
-
             </table>
           </div>
         </div>

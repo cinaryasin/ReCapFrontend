@@ -18,7 +18,8 @@ import('../../../../assets/js/main');
 })
 export class CarListComponent implements OnInit {
 
-  carDetails: CarDetail[];
+  details:CarDetail[];
+  carDetails: CarDetail[]=[];
   carBrandImages: CarBrandImage[];
   colors: Color[];
   branddetail:BrandDetail[];
@@ -45,6 +46,12 @@ export class CarListComponent implements OnInit {
     this.carBrandImageService.getBrandDetail().subscribe(r=>{
       this.branddetail = r.data
     })
+  }
+
+  getCarDetailByCarId(id: number) {
+    this.carService.getCarById(id).subscribe((response) => {
+      this.details = response.data;
+    });
   }
 
 
