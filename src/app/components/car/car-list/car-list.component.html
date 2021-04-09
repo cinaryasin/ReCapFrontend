@@ -31,7 +31,6 @@
                     <tr>
                       <th class="text-center">Renk Adı</th>
                       <th class="text-center">
-                        <i class="bx bxs-message-square-edit"></i> Güncelle
                       </th>
                     </tr>
                   </thead>
@@ -40,7 +39,7 @@
                     <tr *ngFor="let color of colors">
                       <td class="text-center">{{ color.colorName }}</td>
                       <td class="text-center">
-                        <button type="button" class="btn btn-outline-dark px-3">
+                        <button routerLink="/color/{{ color.id }}" type="button" class="btn btn-outline-dark px-3">
                           <i class="bx bxs-message-square-edit"></i>
                           Güncelle
                         </button>
@@ -65,7 +64,7 @@
               <th>₺ Fiyatı</th>
               <th>Model Yılı</th>
               <th>Renk</th>
-              <th>Acıklama</th>
+              <th>Model</th>
               <th class="text-center"><i class='bx bx-image' style="font-size: 25px;"></i></th>
 
               <th class="text-center">

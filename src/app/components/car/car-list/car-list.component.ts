@@ -54,6 +54,12 @@ export class CarListComponent implements OnInit {
     });
   }
 
+  getCarDetailByColorId(id: number) {
+    this.carService.getCarDetailByColorId(id).subscribe((response) => {
+      this.carDetails = response.data;
+      console.log(response.data)
+    });
+  }
 
   getColors() {
     this.colorService.getColor().subscribe(response => {
@@ -67,6 +73,10 @@ export class CarListComponent implements OnInit {
         console.log(param.brandId)
         return this.getCarDetailByBrandId(param.brandId);
       }
+      else if (param.colorId) {
+        console.log(param.colorId)
+        return this.getCarDetailByColorId(param.colorId);
+      }
       return this.getCarDetails();
     });
   }
@@ -76,6 +86,7 @@ export class CarListComponent implements OnInit {
       this.carDetails = response.data;
     });
   }
+  
 
   customOptions: OwlOptions = {
     loop: true,

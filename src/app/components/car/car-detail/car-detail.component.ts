@@ -17,6 +17,10 @@ export class CarDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.setCarDetails();
+    this.activatedRoute.params.subscribe(params=>{
+       this.getCarById(params["carId"])
+    })
+    
   }
 
   getCarDetails() {
@@ -44,7 +48,8 @@ export class CarDetailComponent implements OnInit {
   getCarById(id: number) {
     this.carService.getCarById(id).subscribe((response) => {
       this.carDetail = response.data;
-      console.log(response.data)
     });
   }
+
+  
 }

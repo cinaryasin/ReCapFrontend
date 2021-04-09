@@ -15,6 +15,7 @@ import { IntroComponent } from './components/intro/intro.component';
 import { CarDetailComponent } from './components/car/car-detail/car-detail.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { CarDetailComponent } from './components/car/car-detail/car-detail.compo
     HomepageComponent,
     CarListComponent,
     IntroComponent,
-    CarDetailComponent
+    CarDetailComponent,
+
   ],
   imports: [
     BrowserModule,
