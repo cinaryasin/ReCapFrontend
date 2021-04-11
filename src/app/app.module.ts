@@ -13,8 +13,12 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { CarListComponent } from './components/car/car-list/car-list.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { CarDetailComponent } from './components/car/car-detail/car-detail.component';
-
-
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import {ToastrModule} from "ngx-toastr";
+import { AccoundInterceptor } from './interceptors/accound.interceptor';
+import { from } from 'rxjs';
+import { ColorAddComponent } from './components/color-add/color-add.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +28,10 @@ import { CarDetailComponent } from './components/car/car-detail/car-detail.compo
     CarListComponent,
     IntroComponent,
     CarDetailComponent,
+    LoginComponent,
+    RegisterComponent,
+    ColorAddComponent,
+
 
   ],
   imports: [
@@ -33,10 +41,14 @@ import { CarDetailComponent } from './components/car/car-detail/car-detail.compo
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    ToastrModule.forRoot({
+      positionClass:"toast-bottom-right"
+    }),
   ],
+  
   providers: [
-
+    {provide:HTTP_INTERCEPTORS, useClass:AccoundInterceptor, multi:true}
   ],
   bootstrap: [AppComponent],
 })

@@ -11,7 +11,7 @@
           <li routerLinkActive="active"><a routerLink="/homepage" >Home</a></li>
           <li class="drop-down"><a href="">About</a>
             <ul>
-              <li><a href="#about">About Us</a></li>
+              <li><a routerLink="/colorAdd">About Us</a></li>
               <li><a href="#team">Team</a></li>
 
               <li class="drop-down"><a href="#">Deep Drop</a>
@@ -31,7 +31,7 @@
 
           <li routerLinkActive="active"><a routerLink="/cars" >Tüm Araçlar</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li (click)="logout()"><a href="#contact">İleşim</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
