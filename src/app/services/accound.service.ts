@@ -22,4 +22,5 @@ export class AccoundService {
   isAuthenticated() {
     return !!localStorage.getItem('token')
   }
+  
 }
