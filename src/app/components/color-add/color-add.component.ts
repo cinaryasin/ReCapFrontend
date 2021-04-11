@@ -43,7 +43,7 @@ colorAddForm : FormGroup;
     }else{
       this.toastrService.error("Formunuz eksik","Dikkat")
     }
-    
+       
   }
 
 }
