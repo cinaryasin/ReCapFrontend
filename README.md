@@ -24,35 +24,35 @@
 <h4> 
 Css dosyaları aktif olarak kullanılmıştır.
 <h5>
-bootstrap.min.css <br>
-icofont.min.css <br>
-boxicons.min.css <br>
-venobox.css <br>
-aos.css <br>
+★ bootstrap.min.css <br>
+★ icofont.min.css <br>
+★ boxicons.min.css <br>
+★ venobox.css <br>
+★ aos.css <br>
 
-animate.min.css <br>
-toastr.css <br>
+★ animate.min.css <br>
+★ toastr.css <br>
 
-owl.carousel.min.css <br>
-owl.theme.default.min.css <br>
+★ owl.carousel.min.css <br>
+★ owl.theme.default.min.css <br>
 
-style.css
+★ style.css
 </h5>
 </h4>
 
 <h4> 
 Js dosyaları aktif olarak kullanılmıştır.
 <h5>
-jquery.min.js <br>
-bootstrap.bundle.min.js <br>
-jquery.easing.min.js <br>
-validate.js <br>
-jquery.sticky.js <br>
-venobox.min.js <br>
-isotope.pkgd.min.js <br>
-owl.carousel.min.js <br>
-aos.js <br>
-main.js 
+★ jquery.min.js <br>
+★ bootstrap.bundle.min.js <br>
+★ jquery.easing.min.js <br>
+★ validate.js <br>
+★ jquery.sticky.js <br>
+★ venobox.min.js <br>
+★ isotope.pkgd.min.js <br>
+★ owl.carousel.min.js <br>
+★ aos.js <br>
+★ main.js 
 </h5>
 </h4>
 
