@@ -21,6 +21,8 @@
 
 <img src="src/assets/img/database.png" ></img>
 
+<h1> Info </h1>
+
 <h4> 
 Css dosyaları aktif olarak kullanılmıştır.
 <h5>
@@ -56,9 +58,9 @@ Js dosyaları aktif olarak kullanılmıştır.
 </h5>
 </h4>
 
-<i class="icofont-google-map"></i>
-<h4>Adres</h4>
-<p>Sivas<br />Sivas/Merkez</p>
+<h1> Contact </h1>
+
+
 
 
 
@@ -75,10 +77,14 @@ Js dosyaları aktif olarak kullanılmıştır.
 <h4>Call:</h4>
 <p>+90 (538) 273 14 18</p>
 
+<i class="icofont-google-map"></i>
+<h4>Adres</h4>
+<p>Sivas<br />Sivas/Merkez</p>
 
 
 
-<h4>Ekip Arkadaşı</h4>
+
+<h2>Ekip Arkadaşı</h2>
 <p>Kadir Aztekin</p>
 <p><a href="https://github.com/kadir-aztekin">Kadir Aztekin Github</a></p>
 <a href="https://www.linkedin.com/in/kadir-aztekin-a3178b1a9/" target="_blank" rel="nofollow"><img alt="Kadir's Linkdein" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
