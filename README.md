@@ -23,6 +23,16 @@
 
 <h1> Info </h1>
 
+<h3>
+Proje üzerinde çalışmalar devam etmektedir!!!
+<br>Backend işlemleri yapılmıştır,
+<br>Backend bağlantısı kurulmuş ve veriler database den alınmaktadır. 
+<br>Projede Frontend ve Backend ilişkili çalışmaktadır
+<br>Marka, Araç, Renk için ekleme, silme, güncelleme işlemleri aktif olarak çalışmaktadır, 
+<br>Filtreleme işlemleri aktif olarak çalışmakdatır Backend buna göre dizayn edilmiştir,
+<br>Frontend tarafında henüz aktif olmayan silme, güncelleme işlemleri ileriki zamanlarda aktif hale getirilecektir. </h3>
+
+
 <h4> 
 Css dosyaları aktif olarak kullanılmıştır.
 <h5>
