@@ -21,7 +21,6 @@
 
 <img src="src/assets/img/database.png" ></img>
 
-
 <h1> 
 Css dosyaları aktif olarak kullanılmıştır.
 
@@ -57,63 +56,35 @@ main.js
 
 </h1>
 
+<i class="icofont-google-map"></i>
+<h4>Adres</h4>
+<p>Sivas<br />Sivas/Merkez</p>
 
-<section id="contact" class="contact section-bg">
-  <div class="container">
-    <div class="section-title">
-      <h2>İletişim</h2>
-      <p>Proje Geliştirici iletişim bilgileri</p>
-    </div>
 
-    <div class="row">
-      <div class="col-lg-6">
-        <div
-          class="info d-flex flex-column justify-content-center"
-          data-aos="fade-right"
-        >
-          <div class="address">
-            <i class="icofont-google-map"></i>
-            <h4>Adres</h4>
-            <p>Sivas<br />Sivas/Merkez</p>
-          </div>
 
-          <div class="email">
-            <i class="icofont-envelope"></i>
-            <h4>Email:</h4>
-            <p>yasin001905@gmail.com</p>
-          </div>
+<i class="icofont-envelope"></i>
+<h4>Email:</h4>
+<p>yasin001905@gmail.com</p>
 
-          <div class="phone">
-            <i class="icofont-phone"></i>
-            <h4>Call:</h4>
-            <p>+90 (538) 273 14 18</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div
-          class="info d-flex flex-column justify-content-center"
-          data-aos="fade-right"
-        >
-          <div class="address">
-            <i class="icofont-github"></i>
-            <h4>Github</h4>
-            <p><a href="https://github.com/yasin001905">Yasin Çınar Github</a></p>
-          </div>
 
-          <div class="email">
-            <i class="icofont-linkedin"></i>
-            <h4>Linkedin:</h4>
-            <p><a href="https://www.linkedin.com/in/yasin-%C3%A7inar-35538a1b3/">Yasin Çınar Linkedin</a></p>
-          </div>
 
-          <div class="phone">
-            <i class="icofont-hand-power"></i>
-            <h4>Ekip Arkadaşı</h4>
-            <p>Kadir Aztekin</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<i class="icofont-phone"></i>
+<h4>Call:</h4>
+<p>+90 (538) 273 14 18</p>
+
+
+<i class="icofont-github"></i>
+<h4>Github</h4>
+<p><a href="https://github.com/yasin001905">Yasin Çınar Github</a></p>
+
+
+
+<i class="icofont-linkedin"></i>
+<h4>Linkedin:</h4>
+<p><a href="https://www.linkedin.com/in/yasin-%C3%A7inar-35538a1b3/">Yasin Çınar Linkedin</a></p>
+
+
+
+<i class="icofont-hand-power"></i>
+<h4>Ekip Arkadaşı</h4>
+<p>Kadir Aztekin</p>
