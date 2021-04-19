@@ -81,10 +81,12 @@ main.js
 
 <i class="icofont-linkedin"></i>
 <h4>Linkedin:</h4>
-<p><a href="https://www.linkedin.com/in/yasin-%C3%A7inar-35538a1b3/">Yasin Çınar Linkedin</a></p>
+<a href="https://www.linkedin.com/in/yasin-%C3%A7inar-35538a1b3/" target="_blank" rel="nofollow"><img alt="Yasin's Linkdein" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 
 
 <i class="icofont-hand-power"></i>
 <h4>Ekip Arkadaşı</h4>
 <p>Kadir Aztekin</p>
+<p><a href="https://github.com/kadir-aztekin">Kadir Aztekin Github</a></p>
+<a href="https://www.linkedin.com/in/kadir-aztekin-a3178b1a9/" target="_blank" rel="nofollow"><img alt="Kadir's Linkdein" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
