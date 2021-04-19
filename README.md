@@ -24,17 +24,17 @@
 <h4> 
 Css dosyaları aktif olarak kullanılmıştır.
 <h5>
-bootstrap.min.css /n
-icofont.min.css /n
-boxicons.min.css /n
-venobox.css /n
-aos.css /n
+bootstrap.min.css \n
+icofont.min.css \n
+boxicons.min.css \n
+venobox.css \n
+aos.css \n
 
-animate.min.css /n
-toastr.css /n
+animate.min.css \n
+toastr.css \n
 
-owl.carousel.min.css /n
-owl.theme.default.min.css /n
+owl.carousel.min.css \n
+owl.theme.default.min.css \n
 
 style.css
 </h5>
