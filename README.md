@@ -21,9 +21,9 @@
 
 <img src="src/assets/img/database.png" ></img>
 
-<h1> 
+<h4> 
 Css dosyaları aktif olarak kullanılmıştır.
-
+<h5>
 bootstrap.min.css
 icofont.min.css
 boxicons.min.css
@@ -37,12 +37,12 @@ owl.carousel.min.css
 owl.theme.default.min.css
 
 style.css
+</h5>
+</h4>
 
-</h1>
-
-<h1> 
+<h4> 
 Js dosyaları aktif olarak kullanılmıştır.
-
+<h5>
 jquery.min.js
 bootstrap.bundle.min.js
 jquery.easing.min.js
@@ -53,8 +53,8 @@ isotope.pkgd.min.js
 owl.carousel.min.js
 aos.js
 main.js
-
-</h1>
+</h5>
+</h4>
 
 <i class="icofont-google-map"></i>
 <h4>Adres</h4>
@@ -62,32 +62,22 @@ main.js
 
 
 
-<i class="icofont-envelope"></i>
+
 <h4>Email:</h4>
 <a href="mailto:yasin001905@gmail.com" target="_blank" rel="nofollow"><img alt="Yasin's Mail Address" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /> </a>
 
+<h4>Linkedin:</h4>
+<a href="https://www.linkedin.com/in/yasin-%C3%A7inar-35538a1b3/" target="_blank" rel="nofollow"><img alt="Yasin's Linkdein" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
+<h4>Github</h4>
+<p><a href="https://github.com/yasin001905">Yasin Çınar Github </a></p>
 
-
-<i class="icofont-phone"></i>
 <h4>Call:</h4>
 <p>+90 (538) 273 14 18</p>
 
 
-<i class="icofont-github"></i>
-<h4>Github</h4>
-<p><a href="https://github.com/yasin001905" src="https://img.shields.io/github/followers/yasin001905?style=for-the-badge">Yasin Çınar Github </a></p>
 
 
-
-
-<i class="icofont-linkedin"></i>
-<h4>Linkedin:</h4>
-<a href="https://www.linkedin.com/in/yasin-%C3%A7inar-35538a1b3/" target="_blank" rel="nofollow"><img alt="Yasin's Linkdein" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-
-
-
-<i class="icofont-hand-power"></i>
 <h4>Ekip Arkadaşı</h4>
 <p>Kadir Aztekin</p>
 <p><a href="https://github.com/kadir-aztekin">Kadir Aztekin Github</a></p>
