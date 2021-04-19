@@ -9,47 +9,24 @@ import { CarService } from 'src/app/services/car.service';
   templateUrl: './car-detail.component.html',
   styleUrls: ['./car-detail.component.css']
 })
-export class CarDetailComponent implements OnInit {
-  carDetails:CarDetail[];
-  carDetail:CarDetail[];
 
-  constructor(private carService:CarService, private activatedRoute: ActivatedRoute ) {}
+export class CarDetailComponent implements OnInit {
+
+  carDetail: CarDetail;
+  apiUrl = 'https://localhost:44398/';
+
+  constructor(private carService: CarService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.setCarDetails();
-    this.activatedRoute.params.subscribe(params=>{
-       this.getCarById(params["carId"])
-    })
-    
-  }
-
-  getCarDetails() {
-    this.carService.getCarDetails().subscribe((response) => {
-      this.carDetails = response.data;
-    });
-  }
-  
-  getCarDetailByBrandId(id:number){
-    this.carService.getCarDetailByBrandId(id).subscribe(r=>{
-      this.carDetails=r.data;
-      console.log(r.data);
+    this.activatedRoute.params.subscribe(params => {
+      this.getCarDetailById(params["carId"])
     })
   }
 
-  setCarDetails() {
-    this.activatedRoute.params.subscribe((param) => {
-      if (param.id) {
-        console.log(param.id)
-        return this.getCarById(param.id);
-      }
-      return this.getCarDetails();
-    });
-  }
-  getCarById(id: number) {
-    this.carService.getCarById(id).subscribe((response) => {
+  getCarDetailById(carId: number) {
+    this.carService.getCarDetailById(carId).subscribe((response) => {
       this.carDetail = response.data;
+      console.log(this.carDetail);
     });
   }
-
-  
 }

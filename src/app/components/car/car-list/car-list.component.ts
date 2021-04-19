@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CarBrandImage } from 'src/app/models/carBrandImage';
 import { CarDetail } from 'src/app/models/carDetail';
 import { Color } from 'src/app/models/color';
@@ -19,7 +19,7 @@ import('../../../../assets/js/main');
 export class CarListComponent implements OnInit {
 
   details:CarDetail[];
-  carDetails: CarDetail[]=[];
+  carDetails: CarDetail[];
   carBrandImages: CarBrandImage[];
   colors: Color[];
   branddetail:BrandDetail[];
@@ -28,7 +28,8 @@ export class CarListComponent implements OnInit {
     private carService: CarService,
     private activatedRoute: ActivatedRoute,
     private carBrandImageService: CarBrandImageService,
-    private colorService: ColorService
+    private colorService: ColorService,
+    
   ) { }
 
   ngOnInit(): void {
@@ -46,12 +47,6 @@ export class CarListComponent implements OnInit {
     this.carBrandImageService.getBrandDetail().subscribe(r=>{
       this.branddetail = r.data
     })
-  }
-
-  getCarDetailByCarId(id: number) {
-    this.carService.getCarById(id).subscribe((response) => {
-      this.details = response.data;
-    });
   }
 
   getCarDetailByColorId(id: number) {
