@@ -64,7 +64,7 @@ main.js
 
 <i class="icofont-envelope"></i>
 <h4>Email:</h4>
-<p>yasin001905@gmail.com</p>
+<a href="mailto:yasin001905@gmail.com" target="_blank" rel="nofollow"><img alt="Yasin's Mail Address" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 
 
@@ -75,7 +75,8 @@ main.js
 
 <i class="icofont-github"></i>
 <h4>Github</h4>
-<p><a href="https://github.com/yasin001905">Yasin Çınar Github</a></p>
+<p><a href="https://img.shields.io/github/followers/yasin001905?style=social">Yasin Çınar Github</a></p>
+
 
 
 
@@ -90,3 +91,4 @@ main.js
 <p>Kadir Aztekin</p>
 <p><a href="https://github.com/kadir-aztekin">Kadir Aztekin Github</a></p>
 <a href="https://www.linkedin.com/in/kadir-aztekin-a3178b1a9/" target="_blank" rel="nofollow"><img alt="Kadir's Linkdein" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:aztekadir@gmail.com" target="_blank" rel="nofollow"><img alt="Kadir's Mail Address" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
